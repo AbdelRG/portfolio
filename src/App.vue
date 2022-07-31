@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <CardProfile/>
-    
+    <ContentSection/>
   </div>
 
 </template>
@@ -9,10 +9,12 @@
 <script>
 
 import CardProfile from "./components/CardProfile.vue"
+import ContentSection from "./components/ContentSection.vue"
 export default {
   name: "App",
   components: {
-    CardProfile
+    CardProfile,
+    ContentSection,
   },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
   
   margin-top: 60px;
   background-color:#121212 ;
+  display:flex;
 }
 body{
   background-color:#121212 ;
