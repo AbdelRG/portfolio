@@ -4,14 +4,17 @@
     <h2 class="contentSectionHeaderTitle">About Me</h2>   
      <NavigationBar/>
      </div>
+     <AboutMe/>
   </div>
 </template>
 
 <script>
 import NavigationBar from "./NavigationBar.vue"
+import AboutMe from "./AboutMe.vue"
 export default {
     components: {
-    NavigationBar
+    NavigationBar,
+    AboutMe
   },
 }
 </script>
@@ -33,6 +36,7 @@ export default {
             padding-bottom: 10px;
             border-bottom: solid #ffcc66 3px;
             border-bottom-left-radius: 0px;
+            
         }
     }
     
