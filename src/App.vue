@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <CardProfile/>
+    
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import CardProfile from "./components/CardProfile.vue"
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CardProfile
+  },
+};
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300:400:700&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto" , sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  
   margin-top: 60px;
+  background-color:#121212 ;
+}
+body{
+  background-color:#121212 ;
 }
 </style>
