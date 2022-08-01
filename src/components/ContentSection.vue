@@ -1,10 +1,11 @@
 <template>
   <div class="contentSectionContainer">
     <div class="contentSectionHeader">
-    <h2 class="contentSectionHeaderTitle">About Me</h2>   
-     <NavigationBar/>
+    <h2 class="contentSectionHeaderTitle">{{activeShow}}</h2>   
+     <NavigationBar :getActive="getActiveShow"/>
      </div>
-     <AboutMe/>
+       
+     <component :is='activeShow'/>
   </div>
 </template>
 
@@ -12,10 +13,22 @@
 import NavigationBar from "./NavigationBar.vue"
 import AboutMe from "./AboutMe.vue"
 export default {
+    name:"ContentSection",
+     
+    data(){
+    return{
+      activeShow:'AboutMe'
+    }
+  },
     components: {
     NavigationBar,
     AboutMe
   },
+  methods:{
+    getActiveShow(activeShow){
+        this.activeShow = activeShow
+    }
+  }
 }
 </script>
 

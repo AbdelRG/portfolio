@@ -1,14 +1,21 @@
 <template>
   <div class="navbarContainer">
-    <p class ="sectionTitle">About</p>
-    <p class ="sectionTitle">Resume</p>
-    <p class ="sectionTitle">Portfolio</p>
+    <p class ="sectionTitle" v-on:click="getActive('AboutMe')">About</p>
+    <p class ="sectionTitle" v-on:click="getActive('Resume')">Resume</p>
+    <p class ="sectionTitle" v-on:click="getActive('Portfolio')">Portfolio</p>
   </div>
 </template>
 
 <script>
 export default {
-
+   data(){
+    return{
+      activeShow:'AboutMe'
+    }
+  },
+  props:{
+    getActive:Function
+  }
 }
 </script>
 

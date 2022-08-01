@@ -26,6 +26,20 @@ I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web 
         </div>
     </div>
     <h2 class="activitiesTitle">Technologies</h2>
+    <div class ="technologiesContainer">
+        <div class="technologyContainer">
+             <img class="technoLogo" src="../assets/html5-css3.png">
+        </div>
+         <div class="technologyContainer">
+             <img class="technoLogo" src="../assets/javascript.png">
+        </div>
+         <div class="technologyContainer">
+             <img class="technoLogo" src="../assets/node-js-new.png">
+        </div>
+         <div class="technologyContainer">
+             <img class="technoLogo" src="../assets/1631110818-logo-react-js.png">
+        </div>
+    </div>
   </div>
 </template>
 
@@ -85,6 +99,35 @@ export default {
                     color: grey;
                     margin-top:0px;
                 }
+            }
+        }
+    }
+    .technologiesContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .technologyContainer{
+             height: 140px;
+            width: 250px;
+            background: linear-gradient(#433d2d ,#202021);
+            border-top: solid  #ceb25c 0.5px  ;
+            margin-left:30px;
+            border-radius:15px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            transition: all 500ms ease-out;
+            opacity: 1;
+            &:hover {
+              opacity: 0.7;
+              
+               }
+            .technoLogo{
+                height: 100px;
+                width: 150px;
+                object-fit: contain;
+                
             }
         }
     }
