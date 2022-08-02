@@ -1,8 +1,8 @@
 <template>
   <div class="navbarContainer">
     <p class ="sectionTitle" v-on:click="getActive('AboutMe')">About</p>
-    <p class ="sectionTitle" v-on:click="getActive('Resume')">Resume</p>
-    <p class ="sectionTitle" v-on:click="getActive('Portfolio')">Portfolio</p>
+    <p class ="sectionTitle" v-on:click="getActive('ResumeCv')">Resume</p>
+    <p class ="sectionTitle" v-on:click="getActive('PortfolioList')">Portfolio</p>
   </div>
 </template>
 

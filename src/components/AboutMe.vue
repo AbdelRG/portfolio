@@ -2,10 +2,11 @@
   <div class="aboutMeContainer">
     <div class="aboutMeTextContainer">
     <p class="aboutMeText">
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.<br>
+Passionné par les nouvelles technologies, de nature autodidacte et désireux d'apprendre, je suis capable de
+m'adapter rapidement à vos méthodes de travail<br>
 
     </p>
-    <p class="aboutMeText">My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+    <p class="aboutMeText">Des exemples de mes réalisations sont disponibles sur ma page GitHub.
     </p>
     </div>
     <h2 class="activitiesTitle">Ce que je fait</h2>

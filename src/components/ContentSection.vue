@@ -12,6 +12,8 @@
 <script>
 import NavigationBar from "./NavigationBar.vue"
 import AboutMe from "./AboutMe.vue"
+import ResumeCv from "./ResumeCv.vue"
+import PortfolioList from "./PortfolioList.vue"
 export default {
     name:"ContentSection",
      
@@ -22,7 +24,9 @@ export default {
   },
     components: {
     NavigationBar,
-    AboutMe
+    AboutMe,
+    ResumeCv,
+    PortfolioList
   },
   methods:{
     getActiveShow(activeShow){
@@ -35,7 +39,7 @@ export default {
 <style lang="scss">
 .contentSectionContainer{
     width: 800px;
-    height: 1000px;
+    height: 900px;
     background-color: #1e1e1f;
     border: solid #383838 0.1em;
     border-radius:15px ;
